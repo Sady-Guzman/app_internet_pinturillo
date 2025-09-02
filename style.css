@@ -8,8 +8,20 @@ body {
   background: #f0f0f0;
 }
 
+header {
+  margin: 20px;
+}
+
+header h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
 #toolbar {
-  margin: 10px;
+  display: flex; /* horizontal layout */
+  align-items: center;
+  margin-bottom: 10px;
+  flex-wrap: wrap; /* wrap on smaller screens */
 }
 
 .color-btn {
@@ -23,10 +35,16 @@ body {
 #erase-btn {
   padding: 5px 10px;
   cursor: pointer;
+  margin-left: 10px;
 }
 
 #board {
   border: 2px solid #333;
   background: #fff;
   touch-action: none;
+  margin-bottom: 20px;
+}
+
+footer {
+  margin: 20px;
 }
